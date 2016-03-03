@@ -1,4 +1,6 @@
 # ttpt
+Here's the tech test. Clone and run mvn clean install
+For the Web Service test, you will need SoapUI and to import the given SoapUI project.
 
 ## Integer array task: 
 run the IntegerArrayTaskTest.java as JUnit test
