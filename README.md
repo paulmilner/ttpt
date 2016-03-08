@@ -20,3 +20,4 @@ Test Suite -> Get UK locations for county of Kent
 
 Currrently just asserts that the data contains XML referring to Kent.
 
+That's all...
