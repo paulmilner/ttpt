@@ -27,16 +27,14 @@ public class IntegerArrayTask {
 		int result = 0;
 		int longest = 1; //because there will always be at least 1 in the longest sequence...
 		
-		for (int i=0; i<input.length; i++) {
-			if (i>0) { 
-				int current = input[i];
-				int previous = input[i-1];
-				if (current >= previous) {
-					longest++;
-				} else {
-					if (longest > result) result = longest;
-					longest = 1; //reset longest
-				}
+		for (int i=1; i<input.length; i++) {
+			int current = input[i];
+			int previous = input[i-1];
+			if (current >= previous) {
+				longest++;
+			} else {
+				if (longest > result) result = longest;
+				longest = 1; //reset longest
 			}
 		}
 		return result;
